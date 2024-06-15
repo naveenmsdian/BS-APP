@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIG or SMALL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="timeForm" onsubmit="return handleSubmit(event)">
+            <label for="timePeriod">Enter a three-digit number:</label>
+            <input type="text" id="timePeriod" maxlength="3" pattern="\d{3}" required>
+            <button type="submit" id="submitButton">Submit</button>
+        </form>
+        <div id="result"></div>
+        <div id="countdown"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
